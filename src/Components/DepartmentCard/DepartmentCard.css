@@ -14,7 +14,26 @@
   @media screen and (max-width: 850px){
     .dept-card-main{
       grid-template-columns: repeat(1, minmax(0, 1fr));
+      padding-left: 10px;
+      padding-right: 0px;
       }
+    /* .container11 .card1 .item-dept{
+      width: 330px;
+      height: 240px;
+    } */
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 900px)  {
+    .container11 .card1 .item-dept{
+      width: 330px !important;
+      height: 240px !important;
+    }
+  }
+  @media screen and (min-width: 300px) and (max-width: 400px)  {
+    .container11 .card1 .item-dept{
+      width: 295px !important;
+      height: 240px !important;
+    }
   }
 
   .container11{
@@ -51,7 +70,7 @@
 }
 .container11 .card1 .item-dept.itemd1{
   position: relative;
-  background: -webkit-linear-gradient( 271deg, #181818, rgb(0 0 0 / 10%));
+  background: -webkit-linear-gradient(280deg, #380000, rgb(255 0 0 / 10%));
   justify-content: center;
   z-index: 1;
   display: flex;
@@ -63,7 +82,7 @@
 }
 .container11 .card1:hover .item-dept.itemd1{
   transform: translateY(0);
-  background-color: rgb(39, 39, 39 , 0.5);
+  background: -webkit-linear-gradient(20deg, #380000, rgb(255 0 0 / 10%));
   border-radius: 5% 5% 0% 0%;
 }
 .container11 .card1 .item-dept.itemd1 .content{
@@ -99,7 +118,7 @@
 }
 .container11 .card1:hover .item-dept.itemd2{
   transform: translateY(0);
-  background: -webkit-linear-gradient( 271deg, #222222, rgba(0, 0, 0, 0.3));
+  background: -webkit-linear-gradient( 271deg, #530000, rgba(141, 5, 5, 0.3));
   opacity: 1;
   display: flex;
   flex-direction: column;
