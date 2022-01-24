@@ -46,7 +46,7 @@
   margin: 10px 0;
   background: transparent;
   /* border: 0px; */
-  border: 2px solid red;
+  border-bottom: 3px solid #5c2029;
   padding: 10px;
   color: #c5ecfd;
   width: 100%;
@@ -55,7 +55,11 @@
   margin: 10px 0;
   background: transparent;
   /* border: 0px; */
-  border: 2px solid red;
+  /* border: 3px solid #5c2029; */
+  border-bottom: 3px solid #5c2029;
+  border-top: 3px solid #5c2029;
+  border-left: 1px solid #5c2029 ;
+  border-right:1px solid #5c2029;
   padding: 10px;
   color: #c5ecfd;
   width: 100%;
