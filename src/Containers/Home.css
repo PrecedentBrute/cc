@@ -1,0 +1,20 @@
+.HomeFull{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height:300vh;
+}
+
+.landing{
+    position: relative;
+    top:-37vh;
+}
+@media screen and (max-width: 480px) {
+    .HomeFull{
+        height:130vh;
+    }
+    .landing{
+        position:relative;
+        top:-25vh;
+    }
+}

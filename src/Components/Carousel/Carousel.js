@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Carousel.css";
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import {EffectCards} from 'swiper';
+import "swiper/swiper.min.css";
+import "swiper/modules/effect-cards/effect-cards.min.css";
+import "swiper/modules/navigation/navigation.min.css";
+import "swiper/modules/pagination/pagination.min.css";
+import "swiper/modules/scrollbar/scrollbar.min.css";
 
 const Carousel = () => {
   // const [style, setStyle] = useState("");
   const [currdeg, setCurrdeg] = useState(0);
+  const [smallScreen, setSmallScreen] = useState(false);
 
   const prevCarousel = () => {
     setCurrdeg(currdeg + 60);
@@ -17,12 +26,21 @@ const Carousel = () => {
     transform: `rotateY(${currdeg}deg)`,
   };
 
+  // useEffect(() => {
+  //   if (window.innerWidth <= 1030) {
+  //     setSmallScreen(true);
+  //   } else {
+  //     setSmallScreen(false);
+  //   }
+  //   console.log(smallScreen);
+  // },[smallScreen]);
+
   return (
-    <div className="carousel-position absolute top-96 w-screen z-10">
-      <div>
-        <h1 className="achievement pl-8 text-7xl text-center">ACHIEVEMENTS</h1>
+    <div className="carousel-position w-screen z-10">
+      <div className="carousel-display">
+        <h1 className="achievement pl-8  text-center">ACHIEVEMENTS</h1>
       </div>
-      <div className="flex justify-between relative top-12 items-center">
+      <div className="car-display flex justify-between relative top-12 items-center">
         <div>
           <button
             onClick={prevCarousel}
@@ -98,6 +116,68 @@ const Carousel = () => {
             </svg>
           </button>
         </div>
+      </div>
+      <div className="swiper-display">
+        <Swiper
+          // install Swiper modules
+          modules={[Navigation, Pagination, A11y,EffectCards]}
+          effect="cards"
+          spaceBetween={50}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log("slide change")}
+        >
+          <SwiperSlide>
+            <div className="thumbnail-new  bg-gray-600">
+              <img
+                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="thumbnail"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="thumbnail-new  bg-gray-600">
+              <img
+                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="thumbnail"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="thumbnail-new  bg-gray-600">
+              <img
+                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="thumbnail"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="thumbnail-new  bg-gray-600">
+              <img
+                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="thumbnail"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="thumbnail-new  bg-gray-600">
+              <img
+                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="thumbnail"
+              />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="thumbnail-new  bg-gray-600">
+              <img
+                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                alt="thumbnail"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
