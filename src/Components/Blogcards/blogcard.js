@@ -3,6 +3,8 @@ import React from 'react'
 // import './blogcard.css'
 import Posts from './blogsnippet.json'
 import './Blogcards.css'
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 function Blog(props) {
    console.log(Posts)
 
@@ -10,6 +12,7 @@ function Blog(props) {
          <div className="">
             {Posts.slice(1,4).map(post => ( 
             <div className="max-w-md mx-auto my-3 text-white rounded-xl shadow-xl overflow-hidden md:max-w-2xl" key={post.id}>
+               <Flip bottom>
             <div className="md:flex">
                <div className="md:flex-shrink-0">
                   <img className="h-48 w-full object-cover md:w-548" src= {post.Image} alt="A cat" />
@@ -22,6 +25,7 @@ function Blog(props) {
                   </div>    
                </div>
             </div>
+            </Flip>
           </div>
           
             ))}      

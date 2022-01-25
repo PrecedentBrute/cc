@@ -8,7 +8,8 @@ import { Modal } from 'react-responsive-modal';
 // import  { Breakpoint, BreakpointProvider } from 'react-socks';
 import ReactCardCarousel from "react-card-carousel";
 import Tilt from 'react-tilt'
-// import Fade from 'react-reveal/Fade';
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 
 
 function OurProjects() {
@@ -54,14 +55,17 @@ function OurProjects() {
                 
                   <Tilt className="Tilt" options={{ max : 5 , scale: 1.05  }}  >
                     <div className="Tilt-inner"> 
+                    <Fade bottom>
                         <div className="project-card">
                             <div className="project-card-title"><a id={card.id}> {card.title} </a></div>
                             <div className="project-card-body">{card.description}</div>
                             <div className="project-card-techstack">{card.techstack}</div>
                             <Image ratio={900/900} src={card.image} />
                         </div>
+                        </Fade>
                       </div>
                   </Tilt>
+                 
             
               </div>
   
@@ -182,12 +186,14 @@ function OurProjects() {
         <ReactCardCarousel autoplay={true} autoplay_speed={2500}>
         {slides.map((card, i) => (
               
-             
+              
                 <div className="project-card-carousel-style">
+                
                 <h1 style={{padding: "10px" , fontSize: "3ch"}}><a href={card.target}> {card.title} </a></h1>
                   <div className="project-card-text">{card.description}</div>
                   <div style={{padding: "10px" }}>{card.techstack}</div>
                   <Image ratio={200/200} src={card.image} />
+                 
                 </div>
               
 
