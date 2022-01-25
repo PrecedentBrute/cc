@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./TeamMemberCard.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TeamMemberCard = ({ name, department, src }) => {
   const [clicked, setClicked] = useState(false);
@@ -12,7 +13,7 @@ const TeamMemberCard = ({ name, department, src }) => {
   return (
     <div className="body">
         <div className="card center">
-          <input type="checkbox" name="" id="" className="btn "></input>
+          <input type="checkbox" name="" id="" className="btn"></input>
 
           <div className="left_container center">
             <img src="https://media-exp1.licdn.com/dms/image/C5603AQFhT7NOIcTvTQ/profile-displayphoto-shrink_200_200/0/1605812371724?e=1633564800&v=beta&t=Thk_6fds9FYhFZQi2IKDey6D8C1Rjv5vsfGbwfOIKvA"
@@ -39,7 +40,7 @@ const TeamMemberCard = ({ name, department, src }) => {
 
 <a href="https://www.instagram.com/_satvik_sinha/">
 <svg
-                  className="mt-2 ml-3 bg-red-700 p-0.5"
+                  className="mt-2 ml-3 bg-transparent p-0.5"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -50,7 +51,7 @@ const TeamMemberCard = ({ name, department, src }) => {
 </a>
               <a href="https://www.linkedin.com/in/satvik-sinha-b2934a204/">
               <svg
-                  className="mt-2 ml-4 bg-red-700 p-0.5"
+                  className="mt-2 ml-4 bg-transparent p-0.5"
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -63,7 +64,7 @@ const TeamMemberCard = ({ name, department, src }) => {
   </a>
               <a href="https://www.linkedin.com/in/satvik-sinha-b2934a204/">
               <svg
-                  className="mt-2 ml-4 bg-red-700 p-0.5"
+                  className="mt-2 ml-4 bg-transparent p-0.5"
                   width="24"
                   height="24"
                   viewBox="0 0 48 52"
