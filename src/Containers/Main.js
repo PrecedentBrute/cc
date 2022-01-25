@@ -63,10 +63,7 @@ const Main = () => {
   },
   interactivity: {
     events: {
-      onClick: {
-        enable: true,
-        mode: "repulse"
-      },
+     
       onHover: {
         enable: true,
         mode: "connect",
