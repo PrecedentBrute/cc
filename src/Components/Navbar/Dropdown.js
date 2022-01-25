@@ -8,7 +8,7 @@ const Dropdown = (props) => {
     <div
       className={
         props.isOpen
-          ? 'grid grid-rows-4 text-center items-center bgdropdown text-white drop relative z-10'
+          ? 'grid grid-rows-4 text-center items-center bgdropdown text-white drop '
           : 'hidden text-white drop'
       }
       onClick={props.toggle}

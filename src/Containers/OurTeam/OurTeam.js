@@ -47,7 +47,7 @@ const OurTeam = () => {
   };
   return (
     
-    <div className="App text-white relative z-10">
+    <div className="App text-white mb-8">
      <div className="SwiperHide ">
      <Swiper
     //  pagination={true}

@@ -41,7 +41,7 @@ const Landing = () => {
       <div class="particle particle-4"></div>
     </div>
 
-    <div className="page-wrapper relative z-10"> 
+    <div className="page-wrapper"> 
       <div className="w-screen flex justify-center">
           <h1 className="typing relative top-52 font-bold text-5xl md:text-6xl lg:text-7xl">
             <div style={styles} className="type-text">

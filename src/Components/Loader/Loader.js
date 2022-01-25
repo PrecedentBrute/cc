@@ -3,7 +3,7 @@ import React from 'react';
 
 
 function Spinner(props) {
-    return (<div className="relative z-10">
+    return (<div className="">
         <div id="spinnerdiv">     
         <div id="wrapD3Cube">
             <div id="D3Cube"><div id="side1"><div id="main1"></div><div id="sidediv1"></div>

@@ -45,7 +45,7 @@ function OurProjects() {
       <div>
   
      
-        <div className="project-main relative z-10">
+        <div className="project-main">
       <Hero>
         <div className="container">
           <div className="row">

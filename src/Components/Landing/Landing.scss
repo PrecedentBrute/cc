@@ -68,13 +68,14 @@
 
 
 /* Config */
-$color-bg: #1e1e1e;
-$color-particle: #fff;
+$color-bg: #1e1e1e00;
+$color-particle: #6e4941;
 $spacing: 1500px;
 $time-1: 60s;
 $time-2: 120s;
 $time-3: 180s;
 $time-4: 200s;
+
 
 /* mixins */
 @function particles($max) {

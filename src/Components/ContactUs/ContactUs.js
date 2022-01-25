@@ -39,7 +39,7 @@ class App extends React.Component {
     render() {
         return (
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST" className="mb-8">
-                <div className="wrapper mb-4 relative z-10">
+                <div className="wrapper mb-4">
                  <div className="title"><h1>Contact Us</h1></div>
                  <div className="contact-form">
                     <div className="input-fields">

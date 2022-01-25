@@ -7,7 +7,7 @@ function Blog(props) {
    console.log(Posts)
 
     return (
-         <div className="relative z-10">
+         <div className="">
             {Posts.slice(1,4).map(post => ( 
             <div className="max-w-md mx-auto my-3 text-white rounded-xl shadow-xl overflow-hidden md:max-w-2xl" key={post.id}>
             <div className="md:flex">

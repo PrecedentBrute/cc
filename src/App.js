@@ -1,6 +1,7 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState,useEffect, useRef} from 'react';
 import Main from "./Containers/Main";
 import Loader from "./Components/Loader/Loader";
+
 
 function App() {
 

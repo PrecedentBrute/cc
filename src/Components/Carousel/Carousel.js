@@ -36,7 +36,7 @@ const Carousel = () => {
   // },[smallScreen]);
 
   return (
-    <div className="carousel-position w-screen z-10">
+    <div className="carousel-position w-screen">
       <div className="carousel-display">
         <h1 className="achievement pl-8  text-center">ACHIEVEMENTS</h1>
       </div>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./TeamMemberCard.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TeamMemberCard = ({ name, department, src }) => {
   const [clicked, setClicked] = useState(false);
@@ -11,7 +10,7 @@ const TeamMemberCard = ({ name, department, src }) => {
   };
 
   return (
-    <div className="body">
+    <div className="body md:ml-16">
         <div className="card center">
           <input type="checkbox" name="" id="" className="btn"></input>
 

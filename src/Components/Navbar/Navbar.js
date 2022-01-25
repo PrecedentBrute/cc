@@ -9,7 +9,7 @@ const Navbar = (props) => {
   
   return (
     <nav
-      className='flex justify-between items-center h-16 topbarr text-white relative z-10 shadow-sm'
+      className='flex justify-between items-center h-16 topbarr text-white shadow-sm'
       role='navigation'
     >
       <NavLink to='/' className='flex pl-8 items-center'>

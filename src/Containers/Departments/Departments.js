@@ -6,7 +6,7 @@ const Departments = () => {
   
   return (
     <div>
-      <div className="grid relative z-10 p-4 h-full dept-card-main depMain pl-10 pr-10">
+      <div className="grid p-4 h-full dept-card-main depMain pl-10 pr-10">
         <DepartmentCard alignment={1}/>
         <DepartmentCard alignment={2}/>
         <DepartmentCard alignment={3}/>
