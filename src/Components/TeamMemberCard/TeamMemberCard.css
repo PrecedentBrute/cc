@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins&display-swap");
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 .center {
   display: flex;
@@ -12,9 +13,10 @@
   background:transparent;
   margin-top: -1%;
   margin-left: 10%;
-  margin-right: 10%;
+  margin-right: 100px;
   height: 35vh;
   padding: 15%;
+  width: 100%;
   /* margin-left:08rem;
   margin-top:2rem; */
   /* display: flex; */
@@ -29,6 +31,7 @@
   position: relative;
   justify-content: space-between; 
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .card .left_container {
@@ -79,7 +82,7 @@
   z-index: 10;
   appearance: none;
   -webkit-appearance: none;
-  background: white;
+  /* background: white; */
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
@@ -111,7 +114,9 @@
   align-items: start;
   flex-direction: column;
   transform: translate(100%);
-  border: 5px solid rgba(0, 0, 10, 1);
+  border-top: 2px solid rgba(0, 0, 10, 1);
+  border-bottom: 2px solid rgba(0, 0, 10, 1);
+  border-left: 2px solid rgba(0, 0, 10, 1);
   border-radius: 10px;
   box-shadow: 100px 100px 100px 70px blue;
   transition: all 0.8s;
