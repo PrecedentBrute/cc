@@ -28,7 +28,7 @@
   font-size: 5em;
   border-radius: 5%;
   line-height: 13rem;
-  opacity: 50%;
+  opacity: 0.5 !important;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -36,7 +36,7 @@
 .thumbnail-new{
   height: 20rem;
   width: 30rem;
-  opacity: 50%;
+  opacity: 0.5 !important;
   border-radius: 5%;
   border: 2px solid black;
   transition: 1s;
@@ -44,7 +44,7 @@
 
 .thumbnail-new:hover{
   cursor: pointer;
-  opacity: 100%;
+  opacity: 1 !important;
 }
 
 .swiper-cards .swiper-slide{
@@ -53,7 +53,7 @@
 
 .thumbnail:hover {
   cursor: pointer;
-  opacity: 100%;
+  opacity: 1 !important;
 }
 
 .rotateY {

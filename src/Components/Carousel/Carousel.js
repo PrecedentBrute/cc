@@ -8,6 +8,8 @@ import "swiper/modules/effect-cards/effect-cards.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 import "swiper/modules/pagination/pagination.min.css";
 import "swiper/modules/scrollbar/scrollbar.min.css";
+import img1 from "../../images/IMG1.jpg";
+import img2 from "../../images/IMG2.jpg"
 
 const Carousel = () => {
   // const [style, setStyle] = useState("");
@@ -64,37 +66,37 @@ const Carousel = () => {
           >
             <div className="thumbnail a1 bg-gray-500">
               <img
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmxpbmQlMjBjb2Rpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                src={img1}
                 alt="thumbnail"
               />
             </div>
             <div className="thumbnail b1 bg-gray-600">
               <img
-                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                src={img2}
                 alt="thumbnail"
               />
             </div>
             <div className="thumbnail c1 bg-gray-500">
               <img
-                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                src={img2}
                 alt="thumbnail"
               />
             </div>
             <div className="thumbnail d1 bg-gray-600">
               <img
-                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                src={img2}
                 alt="thumbnail"
               />
             </div>
             <div className="thumbnail e1 bg-gray-500">
               <img
-                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                src={img2}
                 alt="thumbnail"
               />
             </div>
             <div className="thumbnail f1 bg-gray-600">
               <img
-                src="https://images.unsplash.com/photo-1559705421-4ae9bf6fabb5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRodW1ibmFpbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+                src={img2}
                 alt="thumbnail"
               />
             </div>
