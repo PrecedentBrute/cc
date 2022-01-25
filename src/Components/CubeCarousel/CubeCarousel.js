@@ -2,19 +2,30 @@ import React, { useState, useEffect } from "react";
 import Zoom from "react-reveal/Zoom";
 import "./CubeCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
-import { Navigation, Pagination, Scrollbar, A11y,EffectCube } from "swiper";
+import { Navigation, Pagination, Scrollbar, A11y, EffectCube } from "swiper";
 import "swiper/swiper.min.css";
-import "swiper/modules/effect-cube/effect-cube.min.css"
+import "swiper/modules/effect-cube/effect-cube.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 import "swiper/modules/pagination/pagination.min.css";
 import "swiper/modules/scrollbar/scrollbar.min.css";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 
 const CubeCarousel = () => {
   const [clicked, setClicked] = useState(false);
 
   const expandImage = () => {
     console.log("Clicked");
-    setClicked(!clicked);
+    setClicked(true);
+    setOpen(true);
+  };
+
+  const [open, setOpen] = useState(false);
+
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => {
+    setOpen(false);
+    setClicked(false);
   };
 
   return (
@@ -82,23 +93,18 @@ const CubeCarousel = () => {
         </div>
       ) : null}
       {clicked ? (
-        <div>
+        <div className="relative z-10">
           <Zoom>
-            <img
-              onClick={() => {
-                setClicked(false);
-              }}
-              className=" m-auto -ml-8 -mt-20 modal"
-              src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
-              alt="wall"
-            />
+            <Modal open={open} onClose={onCloseModal} center>
+              <h2>Simple centered modal</h2>
+            </Modal>
           </Zoom>
         </div>
       ) : null}
       <div className="cube-swiper-display">
         <Swiper
           // install Swiper modules
-          modules={[Navigation, Pagination, A11y,EffectCube]}
+          modules={[Navigation, Pagination, A11y, EffectCube]}
           effect="cube"
           spaceBetween={50}
           slidesPerView={1}

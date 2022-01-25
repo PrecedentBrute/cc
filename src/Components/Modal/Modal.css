@@ -1,0 +1,11 @@
+.modal{
+    background:black;
+    opacity:0.5;
+    height:70vh;
+    width:70vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

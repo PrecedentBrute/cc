@@ -47,6 +47,10 @@
   opacity: 100%;
 }
 
+.swiper-cards .swiper-slide{
+  overflow: inherit !important;
+}
+
 .thumbnail:hover {
   cursor: pointer;
   opacity: 100%;
@@ -101,6 +105,10 @@
   display: none;
 }
 
+.swiper-pagination{
+  height:2vh;
+}
+
 @media only screen and (max-width: 1030px) {
   .car-display {
     display: none;
@@ -130,8 +138,8 @@
     height:10rem;
     width:15rem;
   }
-  /* .swiper-button-next{
+  .swiper-button-next{
     display:none;
-  } */
+  }
 }
 /*# sourceMappingURL=Carousel.css.map */
