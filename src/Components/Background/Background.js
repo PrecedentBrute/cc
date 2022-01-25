@@ -1,4 +1,5 @@
 import React, { useEffect,useState } from "react";
+import back from "../../cc-background.heic";
 
 const Background = () => {
     const [offset, setOffset] = useState(0);
@@ -16,7 +17,7 @@ const Background = () => {
     >
       <img
         style={{ opacity: "0.2" }}
-        src="https://mail.google.com/mail/u/0?ui=2&ik=42954d625a&attid=0.1&permmsgid=msg-f:1722848928471007525&th=17e8c9f8ef2d4125&view=att&disp=safe&realattid=f_kystnj1d0"
+        src={back}
         alt="background"
       ></img>
     </div>
