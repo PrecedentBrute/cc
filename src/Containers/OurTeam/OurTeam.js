@@ -11,7 +11,10 @@ import "swiper/swiper.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 import "swiper/modules/pagination/pagination.min.css";
 import "swiper/modules/scrollbar/scrollbar.min.css";
-
+import Reveal from 'react-reveal/Reveal';
+import RubberBand from 'react-reveal/RubberBand';
+import Flash from 'react-reveal/Flash';
+import Fade from 'react-reveal/Fade';
 const OurTeam = () => {
   const [clicked2020, setClicked2020] = useState(true);
   const [clicked2019, setClicked2019] = useState(false);
@@ -49,7 +52,7 @@ const OurTeam = () => {
      <Swiper
     //  pagination={true}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={120}
+      spaceBetween={50}
       slidesPerView={4}
       centeredSlides
       onSlideChange={() => console.log("slide change")}
@@ -63,14 +66,16 @@ const OurTeam = () => {
       </div>
     </Swiper>
     </div>
+    <Fade left>
        <div >
         <h2 className="teamName" >
           2020
         </h2>
-      
-      </div>
+        
+      </div></Fade>
+      <Fade bottom>
       <div className={ clicked2020 ? "grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileShow" : "grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileHide"}>
-        <TeamMemberCard name="Satvik Sinha" department="Frontend"/>
+      <TeamMemberCard name="Satvik Sinha" department="Frontend"/>
         <TeamMemberCard name="Nachiket Kotalwar" department="Frontend" />
         <TeamMemberCard name="Anant Jain" department="Frontend" />
         <TeamMemberCard name="Sarthak Tayal" department="Frontend" />
@@ -80,12 +85,15 @@ const OurTeam = () => {
         <TeamMemberCard />
         <TeamMemberCard name="Aditya SSV" />
       </div>
+      </Fade>
+      <Fade left>
       <div style={{marginTop:"10%"}}>
         <h2 className="teamName" >
           2019
         </h2>
       
-      </div>
+      </div></Fade>
+      <Fade bottom>
       <div className={ clicked2019 ? "grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileShow" : "grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileHide"} >
         
         {/* <TeamMemberCard name="Satvik Sinha" department="Frontend"/> */}
@@ -99,12 +107,15 @@ const OurTeam = () => {
         <TeamMemberCard name="Aditya SSV" />
         
       </div>
+      </Fade>
+      <Fade left>
       <div style={{marginTop:"10%"}}>
         <h2 className="teamName" >
           2018
         </h2>
       
-      </div>
+      </div> </Fade>
+      <Fade bottom>
       <div className={ clicked2018 ? "grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileShow" : "grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileHide"} >
         
         <TeamMemberCard name="Satvik Sinha" department="Frontend"/>
@@ -117,9 +128,10 @@ const OurTeam = () => {
         <TeamMemberCard />
         <TeamMemberCard name="Aditya SSV" />
       </div>
-   
-   
+      </Fade>
+      
     </div>
+    
   );
 };
 

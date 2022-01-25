@@ -27,7 +27,7 @@ h2 {
 .SwiperHide {
     display: none;
 }
-.SliderWrapper {
+/* .SliderWrapper {
     :global(.swiper-pagination-bullet) {
       background: white;
       width: 1rem;
@@ -35,14 +35,14 @@ h2 {
       border-radius: .5rem;
       opacity: 1;
   }
-  
-  :global(.swiper-pagination-bullet-active) {
+   */
+  /* :global(.swiper-pagination-bullet-active) {
     background-color: blue;
     width: 5rem;
     height: 1rem;
     border-radius: .5rem;
   }
-}
+} */
 .swiper-pagination-bullet-active {
     opacity: 1;
     background: var(--swiper-pagination-color, var(--swiper-theme-color));
