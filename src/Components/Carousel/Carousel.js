@@ -128,6 +128,7 @@ const Carousel = () => {
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
+          draggable={true}
         >
           <SwiperSlide>
             <div className="thumbnail-new  bg-gray-600">
