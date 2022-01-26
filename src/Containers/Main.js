@@ -14,7 +14,11 @@ import Team from './OurTeam/OurTeam'
 import Particles from 'react-tsparticles'
 
 
-const Main = () => {
+const Main = (props) => {
+
+  const loadCheck = (value) => {
+    props.intermediate(value);
+  }
 
   const particlesInit = (main) => {
     
@@ -169,7 +173,7 @@ const Main = () => {
       
          <div className='entire'>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" render={(props) => <Home function={loadCheck} {...props} />}  />
             <Route path="/projects" component={OurProjects} />
             <Route path="/team" component={Team} />
             <Route path="/departments" component={Department} />

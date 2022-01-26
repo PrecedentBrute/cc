@@ -8,11 +8,24 @@ import Dropdown from "../Components/Navbar/Dropdown";
 import Slide from "react-reveal/Slide";
 import "./Home.css";
 import Background from "../Components/Background/Background";
+import Loader from "../Components/Loader/Loader";
 
-const Home = () => {
+const Home = (props) => {
+  const checkLoad = (value) => {
+    props.function(value);
+    setLoading(value);
+    setState("none");
+  };
+
+  const [loading, setLoading] = useState(false);
+  const [state,setState] = useState("");
+
   return (
     <div>
-    <Background />
+    <div style={{display:`${state}`}}>
+    <Loader />
+    </div>
+      <Background func={checkLoad} />
       <div className="HomeFull text-white">
         <div className="landing">
           <Landing />
