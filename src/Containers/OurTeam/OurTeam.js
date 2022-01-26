@@ -47,7 +47,7 @@ const OurTeam = () => {
   };
   return (
     
-    <div className="App text-white mb-8">
+    <div className="App text-white">
      <div className="SwiperHide ">
      <Swiper
     //  pagination={true}
@@ -116,7 +116,7 @@ const OurTeam = () => {
       
       </div> </Fade>
       <Fade bottom>
-      <div className={ clicked2018 ? "grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileShow" : "grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileHide"} >
+      <div className={ clicked2018 ? "grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileShow" : "md:mb-32 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 mobileHide"} >
         
         <TeamMemberCard name="Satvik Sinha" department="Frontend"/>
         <TeamMemberCard name="Nachiket Kotalwar" department="Frontend" />
@@ -129,8 +129,10 @@ const OurTeam = () => {
         <TeamMemberCard name="Aditya SSV" />
       </div>
       </Fade>
-      
+      <div className="mobileHide" style={{display:"block", height:"20px"}}></div>  
     </div>
+
+    
     
   );
 };

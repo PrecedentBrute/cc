@@ -13,9 +13,9 @@ const Dropdown = (props) => {
       }
       onClick={props.toggle}
     >
-      <NavLink exact={true} to='/' activeClassName='activeStyled' className='p-4'>
+        <NavLink exact={true} to='/' activeClassName='activeStyled' className='p-4'>
         Home
-      </NavLink>
+        </NavLink>
         <NavLink to='/projects' activeClassName="activeStyled" className='p-4'>
         Projects
         </NavLink>
@@ -25,12 +25,9 @@ const Dropdown = (props) => {
         <NavLink to='/departments' activeClassName="activeStyled" className='p-4'>
         Departments
         </NavLink>
-        <NavLink to='/blog' activeClassName="activeStyled" className='p-4'>
-        Blog
-        </NavLink>
-      <NavLink to='/contact' activeClassName="activeStyled" className='p-4'>
+        <NavLink to='/contact' activeClassName="activeStyled" className='p-4'>
         Contact Us
-      </NavLink>
+        </NavLink>
     </div>
   );
 };
