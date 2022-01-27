@@ -1,0 +1,108 @@
+*{
+    text-align: center;
+}
+
+.style{
+    /* color:red; */
+    text-align: center;
+    vertical-align:bottom;
+    /* border: 2px red solid; */
+    font-size: 2em;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Creepster', cursive;
+}
+
+.img{
+    /* width: 100vw; */
+    /* text-align: center; */
+    /* margin-left: 40%; */
+    /* border:2px red solid; */
+    height: 40vh;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 10ms;
+    /* border: 2px red solid; */
+}
+
+#text-through{
+    text-decoration: line-through;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    font-family: 'Creepster', cursive;
+}
+
+#text{
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    font-family: 'Creepster', cursive;
+}
+
+.redirect{
+    font-size: 3em;
+    padding-top: 60px;
+    animation-name: bg;
+    animation-duration: 2ms;
+    animation-iteration-count: infinite;
+    color: white;
+    
+    
+    /* text-align: center; */
+    font-family: 'Creepster', cursive;
+    /* color: red; */
+    /* border: 2px wheat solid; */
+    /* margin-top: 100px; */
+}
+
+
+@media screen and (max-width:700px){
+.style{
+    font-size: 1em;
+}
+
+#text-through{
+    text-decoration: line-through;
+    font-size: 1em;
+}
+
+#text{
+    font-size: 0.75em;
+}
+
+.redirect{
+    font-size: 1.5rem;
+    padding-top: 30px;
+    
+    /* color: red; */
+}
+
+}
+
+
+@keyframes example {
+    from { 
+        /* width: 100vw; */
+        height: 40vh;
+        }
+
+    to { 
+        /* width: 100vw; */
+        height: 50vh;}
+  }
+
+
+  @keyframes bg {
+    from { color: white;}
+        
+    to { color:red;}
+
+    
+  }
+

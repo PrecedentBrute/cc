@@ -10,6 +10,7 @@ import Department from './Departments/Departments'
 import Blog from '../Components/Blogcards/blogcard';
 import ContactUs from '../Components/ContactUs/ContactUs'
 import Team from './OurTeam/OurTeam'
+import Error from '../Components/404 Error/Error'
 
 import Particles from 'react-tsparticles'
 
@@ -179,6 +180,7 @@ const Main = (props) => {
             <Route path="/departments" component={Department} />
             <Route path="/blog" component={Blog} />
             <Route path="/contact" component={ContactUs} />
+            <Route component={Error} />
             </Switch>
             </div>
       
