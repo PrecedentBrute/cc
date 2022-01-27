@@ -9,6 +9,7 @@ import Slide from "react-reveal/Slide";
 import "./Home.css";
 import Background from "../Components/Background/Background";
 import Loader from "../Components/Loader/Loader";
+import Fullpage from "../Components/Fullpage/Fullpage";
 
 const Home = (props) => {
   const checkLoad = (value) => {
@@ -18,13 +19,29 @@ const Home = (props) => {
   };
 
   const [loading, setLoading] = useState(false);
-  const [state,setState] = useState("");
+  const [state, setState] = useState("");
+  const [ismobile, setIsMobile] = useState(false);
 
-  return (
+  useEffect(() => {
+    if (window.innerWidth < 600) {
+      console.log("lol");
+      setIsMobile(true);
+    }
+    else{
+      setIsMobile(false);
+    }
+    console.log(ismobile);
+  }, [ismobile]);
+
+  return ismobile ? (
     <div>
-    <div style={{display:`${state}`}}>
-    <Loader />
+      <Fullpage />
     </div>
+  ) : (
+    <div>
+      <div style={{ display: `${state}` }}>
+        <Loader />
+      </div>
       <Background func={checkLoad} />
       <div className="HomeFull text-white">
         <div className="landing">
