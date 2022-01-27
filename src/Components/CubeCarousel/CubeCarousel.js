@@ -96,7 +96,12 @@ const CubeCarousel = () => {
         <div className="relative z-10">
           <Zoom>
             <Modal open={open} onClose={onCloseModal} center>
-              <h2>Simple centered modal</h2>
+              <h2 style={{display:"flex",justifyContent:"center"}}>Simple centered modal</h2>
+              <img
+                src="https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MzJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                alt="lol"
+                width="300"
+              />
             </Modal>
           </Zoom>
         </div>

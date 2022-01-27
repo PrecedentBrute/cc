@@ -8,6 +8,8 @@ import "swiper/modules/effect-cards/effect-cards.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 import "swiper/modules/pagination/pagination.min.css";
 import "swiper/modules/scrollbar/scrollbar.min.css";
+import "react-responsive-modal/styles.css";
+import { Modal } from "react-responsive-modal";
 import img1 from "../../images/IMG1.jpg";
 import img2 from "../../images/IMG2.jpg"
 
