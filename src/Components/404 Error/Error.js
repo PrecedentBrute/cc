@@ -8,7 +8,7 @@ import Err from '../../../src/ghost.png'
 
 class Error extends Component {
   render() {
-    return <div>
+    return <div className='errorDiv'>
         <h1 className='style'>Error !! PAGE NOT FOUND </h1>
         {/* <Err className='img'></Err> */}
         <img src={Err} className='img'></img>
