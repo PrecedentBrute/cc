@@ -128,7 +128,7 @@ const Carousel = () => {
           effect="cards"
           spaceBetween={50}
           slidesPerView={1}
-          navigation
+         // navigation
          // pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}

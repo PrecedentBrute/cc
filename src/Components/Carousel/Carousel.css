@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 .achievement {
-  font-family: "Birthstone", cursive;
+  /* font-family: "Birthstone", cursive; */
+  font-family: 'Poppins', sans-serif;
   font-size:64px;
 }
 
@@ -127,6 +129,7 @@
   .thumbnail-new{
     height:16rem;
     width:24rem;
+    opacity: 1 !important;
   }
 }
 

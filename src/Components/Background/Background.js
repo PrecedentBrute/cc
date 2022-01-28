@@ -1,5 +1,6 @@
 import React, { useEffect,useState } from "react";
 import back from "../../cc-background.heic";
+import "./Background.css";
 
 const Background = (props) => {
     const [offset, setOffset] = useState(0);
@@ -26,6 +27,7 @@ const Background = (props) => {
         src={back}
         alt="background"
         onLoad={handleImageLoad}
+        className="cc-fam"
       ></img>
     </div>
   );

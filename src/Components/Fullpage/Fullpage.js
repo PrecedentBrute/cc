@@ -1,12 +1,21 @@
-import React from "react";
+import React,{useState} from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import Background from "../Background/Background";
+import BackgroundMobile from "../BackgroundMobile/BackgroundMobile";
 import Landing from "../Landing/Landing";
 import Carousel from "../Carousel/Carousel";
 import CubeCarousel from "../CubeCarousel/CubeCarousel";
+import Loader from "../Loader/Loader";
 import "./Fullpage.css";
 
-const Fullpage = () => (
+const Fullpage = () => {
+  const checkLoadTwo = (value) => {
+    setStateTwo("none");
+  };
+
+  const [stateTwo, setStateTwo] = useState("");
+
+  return (
   <ReactFullpage
     //fullpage options
     scrollingSpeed={1000} /* Options here */
@@ -17,6 +26,10 @@ const Fullpage = () => (
         <div className="relative z-10">
           <ReactFullpage.Wrapper>
             <div className="section">
+            <div style={{ display: `${stateTwo}` }}>
+               <Loader />
+            </div>
+            <BackgroundMobile func={checkLoadTwo} />
               <div style={{position:"relative",top:"-40vh"}}>
                 <Landing />
               </div>
@@ -36,6 +49,6 @@ const Fullpage = () => (
       );
     }}
   />
-);
+)};
 
 export default Fullpage;

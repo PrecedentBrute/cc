@@ -1,0 +1,6 @@
+.cc-image-mobile img{
+    height: 100vh !important;
+    max-width: none !important;
+    position:absolute;
+    left: -90vw;
+}

@@ -14,7 +14,8 @@ const Landing = () => {
 
   const styles = {
     border: `${border} solid white`,
-    fontFamily: 'Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif'
+    fontFamily: 'Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif',
+    opacity: 1,
   };
 
   // return (

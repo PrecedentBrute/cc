@@ -1,0 +1,11 @@
+/* @media only screen and (max-width: 600px){
+    .cc-fam{
+        height:100vh !important;
+        max-width:none !important;
+        position: relative !important;
+        left:-70vw !important;
+    }
+    .cc-image{
+        transform: translateY(0px) !important;
+    }
+} */

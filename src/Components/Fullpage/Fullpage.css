@@ -6,3 +6,9 @@ li a span{
   background: rgb(187, 44, 44) !important;
   border: 3px solid rgb(58, 5, 5) !important;
 }
+
+.landing-section{
+  background-image: url('../../images/cc-mobile1.png');
+  background-position: center;
+  background-size: cover;
+}

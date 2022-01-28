@@ -113,7 +113,7 @@ const CubeCarousel = () => {
           effect="cube"
           spaceBetween={50}
           slidesPerView={1}
-          navigation
+          //navigation
           //pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
@@ -150,7 +150,6 @@ const CubeCarousel = () => {
               style={{ height: "16rem", width: "32rem" }}
             />
           </SwiperSlide>
-          ...
         </Swiper>
       </div>
     </div>
