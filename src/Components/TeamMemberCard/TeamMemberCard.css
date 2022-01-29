@@ -14,6 +14,7 @@
   margin-top: -1%;
   margin-left: 10%;
   margin-right: 100px;
+  margin-bottom: 10px;
   height: 35vh;
   padding: 15%;
   width: 100%;
@@ -208,4 +209,15 @@ flex-direction: row;
   .body {
     padding:10% ;
    }
+}
+@media screen and (max-height:548px){
+
+  .body{
+    margin-bottom: 130px;
+  }
+}
+@media screen and (min-width:600px) and (max-width: 1129px){
+  .body{
+    margin-left: 30%;
+  }
 }
