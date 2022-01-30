@@ -12,6 +12,7 @@ import ContactUs from '../Components/ContactUs/ContactUs'
 import Team from './OurTeam/OurTeam'
 import Error from '../Components/404 Error/Error'
 
+
 import Particles from 'react-tsparticles'
 
 
@@ -166,7 +167,7 @@ const Main = (props) => {
 }
           
           }
-        />
+        /> 
         <BrowserRouter>       
         
             <Navbar toggle={toggle} />

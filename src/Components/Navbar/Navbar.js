@@ -12,7 +12,7 @@ const Navbar = (props) => {
       className='flex justify-between items-center h-16 topbarr text-white shadow-sm'
       role='navigation'
     >
-      <NavLink to='/' className='flex pl-8 items-center'>
+      <NavLink to='/' className='mobile-navElem flex pl-8 items-center'>
         <img style={{filter:"drop-shadow(0px 0px 4px rgba(255, 0, 0, 1))"} } width="50" height="50" src="/assets/logo.svg" className="" alt="logo" />
         <p className="mt-2 ml-3 headline" style={{ filter: "drop-shadow(0px 0px 10px rgba(255, 0, 0, 1))", lineHeight:"60%"} }>CODING CLUB<br></br><span className='text-sm md:text-xl'>BITS Pilani</span></p>
       </NavLink>

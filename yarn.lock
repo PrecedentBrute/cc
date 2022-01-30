@@ -14660,6 +14660,14 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-17.0.1.tgz"
   "version" "17.0.1"
 
+"react-minimal-side-navigation@^1.9.2":
+  "integrity" "sha512-G6xjpgVyAEWOB3+XCnUksNn7JVD99MtSlIOLKRfzscYq0KyiC7vm63L01Pstl3homp1A5i6sqkG/CuScZME0aA=="
+  "resolved" "https://registry.npmjs.org/react-minimal-side-navigation/-/react-minimal-side-navigation-1.9.2.tgz"
+  "version" "1.9.2"
+  dependencies:
+    "@babel/runtime" "^7.12.1"
+    "tailwindcss" ">=1.9.6"
+
 "react-refresh@^0.8.3":
   "integrity" "sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg=="
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
@@ -14823,7 +14831,7 @@
     "fast-deep-equal" "^3.1.3"
     "tsparticles" "^1.39.0"
 
-"react@^0.14.0 || ^15.0.0 || ^16.0.0-0", "react@^16.8.0 || ^17", "react@^17.0.2", "react@>=16":
+"react@^0.14.0 || ^15.0.0 || ^16.0.0-0", "react@^16.8.0 || ^17", "react@^17.0.2", "react@>=16", "react@>=16.8.0":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"
@@ -16755,7 +16763,7 @@
     "mkdirp" "^0.5.1"
     "untildify" "^3.0.3"
 
-"tailwindcss@npm:@tailwindcss/postcss7-compat@^2.2.17":
+"tailwindcss@>=1.9.6", "tailwindcss@npm:@tailwindcss/postcss7-compat@^2.2.17":
   "integrity" "sha512-3h2svqQAqYHxRZ1KjsJjZOVTQ04m29LjfrLjXyZZEJuvUuJN+BCIF9GI8vhE1s0plS0mogd6E6YLg6mu4Wv/Vw=="
   "resolved" "https://registry.npmjs.org/@tailwindcss/postcss7-compat/-/postcss7-compat-2.2.17.tgz"
   "version" "2.2.17"

@@ -1,57 +1,62 @@
 .drop {
-    transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.bgdropdown{
-    transition: all 1.5s ease-in;
-    background-color: rgba(0,0,0,0);
-    position: absolute;
+.bgdropdown {
+  transition: all 1.5s ease-in;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+}
+
+.side-navigation-panel {
+  height: 108vh;
+  transition: all 1.5s ease-in;
+  position: absolute;
+  right: -100vw;
+  top: -8vh;
+  padding-top: 10vh;
+  background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700326263.jpg);
 }
 
 .hidden > .side-navigation-panel {
-    visibility: hidden;
-    opacity: 0;
-    transition: all 1.5s ease-in;
+  /* visibility: hidden; 
+   opacity: 0; */
+  right: -200vw;
+  transition: all 1.5s ease-in;
 }
 .bgdropdown > .side-navigation-panel {
-    visibility:visible;
-    opacity: 1;
-    transition: all 1.5s ease-in;
+  /* visibility: visible;
+  opacity: 1; */
+  right: -100vw;
+  transition: all 1.5s ease-in;
 }
-
 
 .mob-dd {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    grid-row-start: 3;
-    grid-row-end: 5;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 
-
-
-.activeStyled{
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-.side-navigation-panel{
-    transition: all 1.5s ease-in;
+.activeStyled {
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
- /* new nav panel below  */
-.side-navigation-panel-select-option{
-    color: aliceblue !important;
-
+/* new nav panel below  */
+.side-navigation-panel-select-option {
+  color: aliceblue !important;
 }
 
-.side-navigation-panel-select-option-selected{
-    background-color: unset !important;
+.side-navigation-panel-select-option-selected {
+  background-color: unset !important;
 }
 
 @media only screen and (max-width: 440px) {
-    .page-wrapper{
-        margin-top: 100px;
-    }
+  .page-wrapper {
+    margin-top: 100px;
+  }
 }
 /* disabled grid */
 

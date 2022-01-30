@@ -25,6 +25,16 @@
 }
 
 @media only screen and (max-width: 770px) {
+    /* .topbarr{
+        flex-direction: row-reverse;
+    } */
+    /* .mobile-navElem{
+        padding: 1rem;
+        flex-direction: row-reverse;
+    }
+    .mobile-navElem .headline{
+        display: none;
+    } */
     .alignment{
         display: none;
     }
